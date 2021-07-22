@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Ingest"
+    id="id-d347b54712ca43e1abaef107382c1d9b"
+    documentation="Enables the access, integration, and preparation of data from source systems and transformation for downstream use"/>

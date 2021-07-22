@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Streaming Analytics"
+    id="id-bc9e625dc8c4446584ecc6cb922b7a74"
+    documentation="Streaming analytics is the component responsible for running the analytics on streaming data in real-time."/>

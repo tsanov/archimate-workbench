@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Syncronization"
+    id="id-1f588769bc664dccb27626183dd41c5d"
+    documentation="Typically through change data capture (CDC), this process replicates and synchronizes data among database management systems (DBMSs). Schemas and other data structures in DBMS may be identical or slightly different. This pattern keeps operational data current across multiple systems"/>

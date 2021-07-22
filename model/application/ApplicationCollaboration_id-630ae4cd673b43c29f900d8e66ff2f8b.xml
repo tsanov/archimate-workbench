@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Descriptive Data"
+    id="id-630ae4cd673b43c29f900d8e66ff2f8b"
+    documentation="The descriptive data is sometimes referred to as metadata because it describes the data in the data reservoir. Descriptive data provides the definitions used to create information views and access the data in the data reservoir using the information view. http://www.redbooks.ibm.com/redpapers/pdfs/redp5120.pdf"/>

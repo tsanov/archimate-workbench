@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Landing Zone"
+    id="id-eaf09e997ebe4bc1935ccd124d006ab0"
+    documentation="Landing pad areas are used to manage movement of data into, out of, and around the Logical Data Warehouse, and to provide appropriate decoupling between systems.  The implementation can include database tables, directories within Hadoop, message queues, or similar structures"/>

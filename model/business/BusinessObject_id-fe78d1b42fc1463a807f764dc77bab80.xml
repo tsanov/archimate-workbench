@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Voice"
+    id="id-fe78d1b42fc1463a807f764dc77bab80"
+    documentation="Refers to voice communications that can be transcribed and analyzed to discover customer insights"/>

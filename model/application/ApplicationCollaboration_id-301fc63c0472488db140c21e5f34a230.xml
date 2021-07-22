@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Real-time Analytics"
+    id="id-301fc63c0472488db140c21e5f34a230"
+    documentation="The data reservoir could process events in real time and produce insight that could be stored in the data reservoir’s repositories, and published externally for other systems to act upon."/>

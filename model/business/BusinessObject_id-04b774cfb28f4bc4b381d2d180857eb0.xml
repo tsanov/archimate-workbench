@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Datasets"
+    id="id-04b774cfb28f4bc4b381d2d180857eb0"
+    documentation="Ability to deliver flat filesfor downstream analytics"/>

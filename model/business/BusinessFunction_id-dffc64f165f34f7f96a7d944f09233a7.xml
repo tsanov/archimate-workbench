@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Data Lake ( Non-Certified )"
+    id="id-dffc64f165f34f7f96a7d944f09233a7"
+    documentation="A data lake is a collection of storage instances of various data assets. These assets are stored in a near-exact, or even exact, copy of the source format. "/>

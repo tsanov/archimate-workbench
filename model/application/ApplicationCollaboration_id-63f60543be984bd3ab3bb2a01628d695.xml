@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Monitor"
+    id="id-63f60543be984bd3ab3bb2a01628d695"
+    documentation="The monitor watches over the overall function and responsiveness of the data reservoir to ensure a consistent working environment. The data reservoir has many monitor components deployed that record the activity in the data reservoir along with its availability, functionality, and performance. The management of any alerts that the monitors raise can be resolved using workflow."/>

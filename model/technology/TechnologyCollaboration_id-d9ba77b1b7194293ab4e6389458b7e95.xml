@@ -1,0 +1,5 @@
+<archimate:TechnologyCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Operational History Repository"
+    id="id-d9ba77b1b7194293ab4e6389458b7e95"
+    documentation="A repository providing a historical record of the data from an operational application. This data is stored in the same format and with the same level  of quality as is found in the application itself. This approach makes it possible to use this data to investigate activity around a specific application."/>
