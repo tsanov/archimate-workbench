@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Event Correlation"
+    id="id-71306c51b1cb448ea9585f38c9481543"
+    documentation="Event correlation provides for complex event processing based on business events that can occur over an extended period and can correlate these events to develop additional insight. Some of these events can come from insight obtained by the streaming analytics component."/>

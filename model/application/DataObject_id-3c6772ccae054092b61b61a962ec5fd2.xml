@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Information Views"
+    id="id-3c6772ccae054092b61b61a962ec5fd2"
+    documentation="Definitions of simplified subsets of information stored in the data reservoir repositories. These views are created with the information consumer in mind."/>

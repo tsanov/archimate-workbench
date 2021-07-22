@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Repository Data Mart"
+    id="id-d3b91e75bc1f4d7c907dd544e84bd4f2"
+    documentation="Special-purpose data marts that are standalone are oriented to a specific business line within an organization"/>

@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Conditional Data Mart"
+    id="id-5c3f6b4c370c47ffa3e98b3be1f33106"
+    documentation="Conditional data marts require data feeds from the data warehouse and other source systems to serve a specific business need"/>

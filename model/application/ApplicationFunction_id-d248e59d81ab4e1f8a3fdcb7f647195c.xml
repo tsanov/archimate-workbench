@@ -1,0 +1,5 @@
+<archimate:ApplicationFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Information Integration and Governance"
+    id="id-d248e59d81ab4e1f8a3fdcb7f647195c"
+    documentation="Information integration and governance provide the libraries to support different provisioning, transformation, and governance capabilities that are used in the data reservoir, particularly the data refineries."/>

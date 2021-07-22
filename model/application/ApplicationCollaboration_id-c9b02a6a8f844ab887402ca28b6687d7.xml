@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Real Time Interfaces"
+    id="id-c9b02a6a8f844ab887402ca28b6687d7"
+    documentation="These systems could also make API calls to the data reservoir to access/update data or insight. These APIs might interact with a single data repository or may federate data from multiple repositories. Service interfaces provide the ability for outside systems to access data in the reservoir repositories, and for systems within the reservoir to query data from both inside and outside. These interfaces can be REST web services, SQL style through JDBC, or various other forms"/>

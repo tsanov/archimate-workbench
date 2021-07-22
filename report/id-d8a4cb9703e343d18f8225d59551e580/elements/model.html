@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Tsanov@GCCode</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Tsanov@GCCode</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-d8a4cb9703e343d18f8225d59551e580", type:"ArchimateModel", name:decodeURL("Tsanov%40GCCode"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-b7612c93d65d4c78985dd6d61bba394d", contenttype:"Folder"});
+								dataFolders.push({id:"id-b7612c93d65d4c78985dd6d61bba394d", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-14d788c62acc49c899412fc9c2e0de08", contenttype:"Folder"});
+								dataFolders.push({id:"id-14d788c62acc49c899412fc9c2e0de08", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-5e4fc0dd2f90455c97c567739633a490", contenttype:"BusinessEvent"});
+										dataElements.push({id:"id-5e4fc0dd2f90455c97c567739633a490", type:"BusinessEvent", name:decodeURL("Privacy+and+Security"), documentation:decodeURL("Privacy+and+Security+Management+involves+the+following%3A+prioritizing+risk-mitigating+actions+based+on+the+data%27s+sensitivity+levels+and+manner+of+use%2C+document+clearly+personal+information+processing+purposes+and+subsequently+used+data%2C+and+clarifying+roles+and+responsibilities+in+the+various+processes+involved.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-1833dc2e49f44f4b9dbf01f0a3e67968", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-1833dc2e49f44f4b9dbf01f0a3e67968", type:"BusinessFunction", name:decodeURL("Message"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-1d20f4ce7baf4ee6ac8eeb212c46a300", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-1d20f4ce7baf4ee6ac8eeb212c46a300", type:"BusinessFunction", name:decodeURL("Batch+%2F+ETL"), documentation:decodeURL("Extracting%2C+processing%2C+and+loading+data+in+bulk%2C+batch+data+movement+includes+two+styles%3A+extract-load-transform+%28ELT%29+and+extract-transform-load+%28ETL%29.+Batch+data+movement+often+combines+with+data+cleaning+processes%2C+such+as+reconciling+semantic+disparity%2C+merging+master+data+entities+or+correcting+erroneous+data")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-1f588769bc664dccb27626183dd41c5d", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-1f588769bc664dccb27626183dd41c5d", type:"BusinessFunction", name:decodeURL("Syncronization"), documentation:decodeURL("Typically+through+change+data+capture+%28CDC%29%2C+this+process+replicates+and+synchronizes+data+among+database+management+systems+%28DBMSs%29.+Schemas+and+other+data+structures+in+DBMS+may+be+identical+or+slightly+different.+This+pattern+keeps+operational+data+current+across+multiple+systems")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-20ab97c061544d968b8b450b5df8e679", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-20ab97c061544d968b8b450b5df8e679", type:"BusinessFunction", name:decodeURL("Repository+%28Certified%29"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-20d3b83a1fcb4b0d93ecbd16f0878bbd", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-20d3b83a1fcb4b0d93ecbd16f0878bbd", type:"BusinessFunction", name:decodeURL("Data+Governance"), documentation:decodeURL("Data+governance+is+a+decision-making+framework+for+assigning+rights%2C+responsibilities+and+authorities+to+ensure+that+an+enterprise%2C+its+regulators+and+its+stakeholders+receive+reliable%2C+authentic%2C+accurate+and+timely+data")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-20ff6dc5b5f04c27a7de44a865fbb93b", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-20ff6dc5b5f04c27a7de44a865fbb93b", type:"BusinessFunction", name:decodeURL("Data+Quality"), documentation:decodeURL("Data+Quality+-+Profiling%2C+cleansing%2C+enriching%2C+certifying%2C+and+correcting+of+data+to+improve+quality+and+consistency+for+fit+for+a+purpose+business+requirements")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-50db94ec51d14bc981b177e19d9b836e", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-50db94ec51d14bc981b177e19d9b836e", type:"BusinessFunction", name:decodeURL("Virtualization+%2F+Federation"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-50e28170c23a444fac916e237faa96ad", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-50e28170c23a444fac916e237faa96ad", type:"BusinessFunction", name:decodeURL("Enterprise+Data+Warehouse"), documentation:decodeURL("A+data+warehouse+is+a+storage+architecture+designed+to+hold+data+extracted+from+transaction+systems%2C+operational+data+stores+and+external+sources.+The+warehouse+then+combines+that+data+in+an+aggregate%2C+summary+form+suitable+for+enterprise-wide+data+analysis+and+reporting+for+predefined+business+needs")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-54699335b2b045058bd554f7f5c0b08a", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-54699335b2b045058bd554f7f5c0b08a", type:"BusinessFunction", name:decodeURL("Persist+and+Access"), documentation:decodeURL("Stores+the+persistent+data%2C+metadata%2C+and+models+that+provide+the+analytical+capabilities+and+orchestrate+the+operation+of+the+architecture%0D%0AStores+persistent+and+transient+information%2C+of+prepared+and+accessible+business+information+that+are+ready+for+use+by+respective+use+cases")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-5c3f6b4c370c47ffa3e98b3be1f33106", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-5c3f6b4c370c47ffa3e98b3be1f33106", type:"BusinessFunction", name:decodeURL("Conditional+Data+Mart"), documentation:decodeURL("Conditional+data+marts+require+data+feeds+from+the+data+warehouse+and+other+source+systems+to+serve+a+specific+business+need")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-67202f37a4dd4465b31151d02c385322", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-67202f37a4dd4465b31151d02c385322", type:"BusinessFunction", name:decodeURL("Master+Data+Management"), documentation:decodeURL("A+technology-enabled+discipline+in+which+business+and+IT+work+together+to+ensure+the+uniformity%2C+accuracy%2C+stewardship%2C+semantic+consistency+and+accountability+of+the+enterprise%27s+official+shared+master+data+assets.+Master+data+is+the+consistent+and+uniform+set+of+identifiers+and+extended+attributes+that+describes+the+core+entities+of+the+enterprise+including+customers%2C+prospects%2C+citizens%2C+suppliers%2C+sites%2C+hierarchies+and+chart+of+accounts.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-6961e2d84a7a46879cfaf8f360b51486", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-6961e2d84a7a46879cfaf8f360b51486", type:"BusinessFunction", name:decodeURL("Meta+Data+Management"), documentation:decodeURL("A+technology-enabled+discipline+in+which+business+and+IT+work+together+to+ensure+the+uniformity%2C+accuracy%2C+stewardship%2C+semantic+consistency+and+accountability+of+the+enterprise%27s+official+shared+metadata.+Metadata+is+a+set+of+data+that+describes+and+gives+information+about+other+data.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-9567aeb84b954a71939e1c73cdc69449", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-9567aeb84b954a71939e1c73cdc69449", type:"BusinessFunction", name:decodeURL("In+Memory+Database"), documentation:decodeURL("Refers+to+in-memory+database+to+create+virtual+integrated+view+of+data+on+the+fly.+This+may+require+physically+moving+data+to+an+environment+%28e.g.%2C+SAP+Hana%29+before+conducting+data+virtualization")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-99b99fa558bf432cb1359b371d5dacdc", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-99b99fa558bf432cb1359b371d5dacdc", type:"BusinessFunction", name:decodeURL("Delivery"), documentation:decodeURL("Leverages+the+intelligence+of+Data+Virtualization+software+to+access+data+sources+directly+to+create+an+optimal+execution+path")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-9f9862ea3986429da31ce89667c764a9", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-9f9862ea3986429da31ce89667c764a9", type:"BusinessFunction", name:decodeURL("Dependant+Data+Mart"), documentation:decodeURL("Dependent+data+marts+are+a+subset+of+the+data+warehouse+and+are+usually+oriented+to+a+specific+business+line")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-b1af39e0825d45b091d44cc0c33df5e8", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-b1af39e0825d45b091d44cc0c33df5e8", type:"BusinessFunction", name:decodeURL("Management"), documentation:decodeURL("Consists+of+policies%2C+rules+or+standards+that+govern+which+data+is+collected%2C+and+how+it+is+stored%2C+arranged%2C+integrated%2C+and+put+to+use+in+data+systems+and+across+the+enterprise")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-b8c5edf5be77418fb8e65d5d777ec0de", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-b8c5edf5be77418fb8e65d5d777ec0de", type:"BusinessFunction", name:decodeURL("Integration"), documentation:decodeURL("Instead+of+physically+moving+the+data%2C+data+federation%2Fvirtualization+executes+queries+against+multiple+data+sources+to+create+virtual+integrated+views+of+data+on+the+fly.+DV%2FDF+requires+adapters+to+various+data+sources%2C+a+metadata+repository+and+a+query+engine+that+can+provide+results+in+various+ways+%28for+example%2C+as+an+SQL+row+set%2C+XML+or+a+Web+services+interface%29")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-bd829b0300e7444aabe4232f9d5fc7a3", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-bd829b0300e7444aabe4232f9d5fc7a3", type:"BusinessFunction", name:decodeURL("Delivery"), documentation:decodeURL("Enables+the+analysis+of+data+and+delivery+to+the+ultimate+consumption+users")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-d347b54712ca43e1abaef107382c1d9b", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-d347b54712ca43e1abaef107382c1d9b", type:"BusinessFunction", name:decodeURL("Ingest"), documentation:decodeURL("Enables+the+access%2C+integration%2C+and+preparation+of+data+from+source+systems+and+transformation+for+downstream+use")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-d3b91e75bc1f4d7c907dd544e84bd4f2", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-d3b91e75bc1f4d7c907dd544e84bd4f2", type:"BusinessFunction", name:decodeURL("Repository+Data+Mart"), documentation:decodeURL("Special-purpose+data+marts+that+are+standalone+are+oriented+to+a+specific+business+line+within+an+organization")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-dffc64f165f34f7f96a7d944f09233a7", contenttype:"BusinessFunction"});
+										dataElements.push({id:"id-dffc64f165f34f7f96a7d944f09233a7", type:"BusinessFunction", name:decodeURL("Data+Lake+%28+Non-Certified+%29"), documentation:decodeURL("A+data+lake+is+a+collection+of+storage+instances+of+various+data+assets.+These+assets+are+stored+in+a+near-exact%2C+or+even+exact%2C+copy+of+the+source+format.+")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-10ecee42e63b47f495b011479447fcc9", contenttype:"BusinessInterface"});
+										dataElements.push({id:"id-10ecee42e63b47f495b011479447fcc9", type:"BusinessInterface", name:decodeURL("Dashboard"), documentation:decodeURL("Dashboards+are+a+style+of+reporting+that+graphically+depicts+operational+or+strategic+information")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-8f85684624cd48908e25146574a73662", contenttype:"BusinessInterface"});
+										dataElements.push({id:"id-8f85684624cd48908e25146574a73662", type:"BusinessInterface", name:decodeURL("Web+API"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-fda6408b93fb4a598c3f29ed6abadce8", contenttype:"BusinessInterface"});
+										dataElements.push({id:"id-fda6408b93fb4a598c3f29ed6abadce8", type:"BusinessInterface", name:decodeURL("Self+Service"), documentation:decodeURL("Refers+to+the+capability+that+allows+business+users+to+query+data+and+create+personalized+reports+in+a+data+warehouse+or+data+marts+environment")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-04b774cfb28f4bc4b381d2d180857eb0", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-04b774cfb28f4bc4b381d2d180857eb0", type:"BusinessObject", name:decodeURL("Datasets"), documentation:decodeURL("Ability+to+deliver+flat+filesfor+downstream+analytics")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-0d20e2c58efb444c94ca98f410d61e97", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-0d20e2c58efb444c94ca98f410d61e97", type:"BusinessObject", name:decodeURL("Text"), documentation:decodeURL("A+human-readable+sequence+of+characters%0D%0A")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-175643eea1ea4783922c13891a1bdfed", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-175643eea1ea4783922c13891a1bdfed", type:"BusinessObject", name:decodeURL("Cloud%3A+Other+Core+Systems"), documentation:decodeURL("ESDC+data+and+information+hosted+externally+%28e.g.%2C+Canada+Student+Loan+Program%29")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-47beff04cb85411d814ef1168d0e875d", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-47beff04cb85411d814ef1168d0e875d", type:"BusinessObject", name:decodeURL("Image"), documentation:decodeURL("A+picture+that+has+been+created+or+copied+and+stored+in+electronic+form+%28e.g.%2C+JPEG%2C+GIF%29")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-5f1da42882ba4d80a5bf62f6e11ba948", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-5f1da42882ba4d80a5bf62f6e11ba948", type:"BusinessObject", name:decodeURL("Web+Data"), documentation:decodeURL("Data+extracted+from+websites")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-6db77ed37b74413ab056afe7d62d8b07", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-6db77ed37b74413ab056afe7d62d8b07", type:"BusinessObject", name:decodeURL("Cloud+Licensed"), documentation:decodeURL("A+resource%2C+such+as+applications+and+storage%2C+which+is+available+online+through+a+licensing+agreement.+")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-9a031e070fa24563bf05908b879eb448", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-9a031e070fa24563bf05908b879eb448", type:"BusinessObject", name:decodeURL("Cloud%3A+Public+Open"), documentation:decodeURL("A+resource%2C+such+as+applications+and+storage%2C+which+is+available+online+to+the+general+public.+")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-b2ceae3c369547a590a273dfdbdd6bbd", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-b2ceae3c369547a590a273dfdbdd6bbd", type:"BusinessObject", name:decodeURL("Video"), documentation:decodeURL("A+visual+media+product+featuring+moving+images")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-bd96dee13c5e485091aedd533ea13fcb", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-bd96dee13c5e485091aedd533ea13fcb", type:"BusinessObject", name:decodeURL("Spreadsheet"), documentation:decodeURL("An+electronic+document+in+which+data+is+arranged+in+the+rows+and+columns+of+a+grid+and+can+be+manipulated+and+used+in+calculations")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-f8d84883f77f4b049d24b79ac8e21fce", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-f8d84883f77f4b049d24b79ac8e21fce", type:"BusinessObject", name:decodeURL("Social"), documentation:decodeURL("Information+from+social+networks+that+show+how+users+share%2C+view+or+engage+with+content+in+addition+to+data+individuals+create+that+is+knowingly+and+voluntarily+shared+by+them+")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-fbcdde5ce589463b9ba0cd6531a1f87a", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-fbcdde5ce589463b9ba0cd6531a1f87a", type:"BusinessObject", name:decodeURL("Structured+Data"), documentation:decodeURL("Data+that+can+be+both+searched+and+processed+by+machine.%0D%0A%0D%0AStructured+data+typically+resides+in+databases%2C+including+spreadsheets%2C+and+is+used+for+both+transaction+and+analytical+processing.+The+latter+normally+conforms+to+an+enterprise-wide+semantics+and+syntax+that+transcends+specific+business+processes+and+functions+and+includes+the+representation+of+Knowledge+%28e.g.%2C+decision+trees+and+rule+bases%29.+This+data+model+or+structure+is+defined+prior+to+the+ingestion+of+associated+data.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-fe78d1b42fc1463a807f764dc77bab80", contenttype:"BusinessObject"});
+										dataElements.push({id:"id-fe78d1b42fc1463a807f764dc77bab80", type:"BusinessObject", name:decodeURL("Voice"), documentation:decodeURL("Refers+to+voice+communications+that+can+be+transcribed+and+analyzed+to+discover+customer+insights")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-149f60fd12314914ae5b160461482a64", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-149f60fd12314914ae5b160461482a64", type:"BusinessRole", name:decodeURL("Enterprise+Architect+%28Business+Role%29"), documentation:decodeURL("Includes+%28Enterprise%29+Solution+Architecture.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-17a0622f57454d00abc37d44cb763609", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-17a0622f57454d00abc37d44cb763609", type:"BusinessRole", name:decodeURL("Information+Steward"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-3139615f11b548d48e2847d589f8da94", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-3139615f11b548d48e2847d589f8da94", type:"BusinessRole", name:decodeURL("Decision+Model+Management"), documentation:decodeURL("Decision+model+management+describes+the+systems+used+by+data+scientists+and+business+analysts+as+they+configure+analytics+models+and+rules+to+execute+inside+the+data+reservoir.+Advanced+analytics+and+data+mining+is+managed+from+decision+model+management.+These+teams+need+access+to+samples+of+the+data.+This+data+must+be+formatted+for+analysis+tools+and+the+environment+must+have+sufficient+performance+capacity+to+handle+intense%2C+lumpy+workloads+from+the+mining+and+testing+processing.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-39726a1cd25f4c4caea284160f59ebaa", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-39726a1cd25f4c4caea284160f59ebaa", type:"BusinessRole", name:decodeURL("Infrastructure+Operator"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-51f6bed62667440b9f90999cabad80cb", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-51f6bed62667440b9f90999cabad80cb", type:"BusinessRole", name:decodeURL("Integration+Developer"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-5387005416854163a3c51fbb8d6a4fe9", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-5387005416854163a3c51fbb8d6a4fe9", type:"BusinessRole", name:decodeURL("Data+Reservoir+Operations"), documentation:decodeURL("The+data+reservoir+operations+team+maintains+the+data+reservoir+behind+the+scenes")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-6b59dce2ad294e21a5fa5a7ce65c2191", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-6b59dce2ad294e21a5fa5a7ce65c2191", type:"BusinessRole", name:decodeURL("Governance%2C+Risk+and+Compliance"), documentation:decodeURL("The+information+governance%2C+risk%2C+and+compliance+team+use+a+reporting+environment+to+demonstrate+compliance+in+industry+regulations+and+business+policies.+Some+of+these+policies+apply+to+the+management+of+information.+These+policies+are+defined+and+managed+in+the+data+reservoir%E2%80%99s+catalog.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-7b149f55af894b45940aece4262935de", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-7b149f55af894b45940aece4262935de", type:"BusinessRole", name:decodeURL("Data+Quality+Analyst"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-b40c5cf8350f4cd8a379fda1c14c46c5", contenttype:"BusinessRole"});
+										dataElements.push({id:"id-b40c5cf8350f4cd8a379fda1c14c46c5", type:"BusinessRole", name:decodeURL("Information+Curator"), documentation:decodeURL("An+individual+or+group+of+people+in+the+organization+that+are+maintaining+the+catalog+information.+This+activity+includes+advertising+new+sources%2C+enhancing+and+categorizing+existing+data+descriptions%2C+and+helping+people+locate+the+data+they+need.")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-007f8c34fdc64a988950ac7217f74caa", contenttype:"BusinessService"});
+										dataElements.push({id:"id-007f8c34fdc64a988950ac7217f74caa", type:"BusinessService", name:decodeURL("Discovery"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-2b956c103b1b4f8690fd98442e0b891d", contenttype:"BusinessService"});
+										dataElements.push({id:"id-2b956c103b1b4f8690fd98442e0b891d", type:"BusinessService", name:decodeURL("Advanced+Analytics"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-2d3a562b1d21442fb2c62dd5ca03d151", contenttype:"BusinessService"});
+										dataElements.push({id:"id-2d3a562b1d21442fb2c62dd5ca03d151", type:"BusinessService", name:decodeURL("Visualization"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-5d9fec6eab7d43b6b394afe35c5f4832", contenttype:"Product"});
+										dataElements.push({id:"id-5d9fec6eab7d43b6b394afe35c5f4832", type:"Product", name:decodeURL("Scheduled+Report"), documentation:decodeURL("Ability+to+create+highly+formatted+and+print-ready+reports+on+a+regular+basis")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-a3ceb031201c4c7097cb1a40cd273d74", contenttype:"Product"});
+										dataElements.push({id:"id-a3ceb031201c4c7097cb1a40cd273d74", type:"Product", name:decodeURL("Alert"), documentation:decodeURL("Alertsare+notifications+for+data+thresholds+for+%28e.g.%2C+performance%29")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-b10ddaad15624f44b6d89b21e5a2bffd", contenttype:"Product"});
+										dataElements.push({id:"id-b10ddaad15624f44b6d89b21e5a2bffd", type:"Product", name:decodeURL("Real+Time+Reporting"), documentation:decodeURL("Ability+to+report+and+conduct+analysis+using+real-time+dat")});
+									dataFoldersContent.push({folderid:"id-14d788c62acc49c899412fc9c2e0de08", contentid:"id-ce469e9ff7444074b5c07f84822aee29", contenttype:"Product"});
+										dataElements.push({id:"id-ce469e9ff7444074b5c07f84822aee29", type:"Product", name:decodeURL("Scorecard"), documentation:decodeURL("Scorecards+help+organizations+measure+and+align+the+strategic+and+tactical+aspects+of+their+businesses%2C+processes+and+individuals+via+goals+and+targets")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-af171c0aeb7d41d09288aa3b824758ba", contenttype:"Folder"});
+								dataFolders.push({id:"id-af171c0aeb7d41d09288aa3b824758ba", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-15c8158e221b44298c1c8943f3968926", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-15c8158e221b44298c1c8943f3968926", type:"ApplicationCollaboration", name:decodeURL("Operational+Governance+Hub"), documentation:decodeURL("A+repository+and+applications+for+managing+the+information+flow+and+information+governance+within+the+data+reservoir.+This+information+node+supports+the+metadata+service.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-1ee5c55ac4894f39a810420c570753c2", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-1ee5c55ac4894f39a810420c570753c2", type:"ApplicationCollaboration", name:decodeURL("Deposited+data"), documentation:decodeURL("Deposited+data+are+information+collections+that+have+been+stored+by+the+data+reservoir+information+users.+These+information+collections+may+contain+new+types+of+information%2C++analysis+results%2C+or+notes.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-290f4605457e477bb1c003c033ceecb4", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-290f4605457e477bb1c003c033ceecb4", type:"ApplicationCollaboration", name:decodeURL("Reporting"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-301fc63c0472488db140c21e5f34a230", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-301fc63c0472488db140c21e5f34a230", type:"ApplicationCollaboration", name:decodeURL("Real-time+Analytics"), documentation:decodeURL("The+data+reservoir+could+process+events+in+real+time+and+produce+insight+that+could+be+stored+in+the+data+reservoir%E2%80%99s+repositories%2C+and+published+externally+for+other+systems+to+act+upon.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-3dc07a65865d444abf75c5b320c0ee93", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-3dc07a65865d444abf75c5b320c0ee93", type:"ApplicationCollaboration", name:decodeURL("Historical+data"), documentation:decodeURL("Historical+data+contains+read-only+records+of+historical+activity")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-3f1c5b3eb80a48b5b73467621d2118cd", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-3f1c5b3eb80a48b5b73467621d2118cd", type:"ApplicationCollaboration", name:decodeURL("Information+Broker"), documentation:decodeURL("The+information+broker+is+a+runtime+server+environment+for+executing+the+integration+processes+%28such+as+the+information+deployment+process%29.+These+processes+move+data+in+and+out+of+the+data+reservoir+and+among+the+components+within+the+reservoir.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-5b63a650d40f42e7b0b890e3dcaecfec", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-5b63a650d40f42e7b0b890e3dcaecfec", type:"ApplicationCollaboration", name:decodeURL("Shared+Operational+Data"), documentation:decodeURL("Shared+operational+data+contains+consolidated+operational+data+that+is+being+shared+by+multiple+systems.+The+data+reservoir+may+host+the+master+copy+of+this+data%2C+or+a+reference+copy+of+this+data+supplied+from+one+or+more+operational+systems.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-630ae4cd673b43c29f900d8e66ff2f8b", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-630ae4cd673b43c29f900d8e66ff2f8b", type:"ApplicationCollaboration", name:decodeURL("Descriptive+Data"), documentation:decodeURL("The+descriptive+data+is+sometimes+referred+to+as+metadata+because+it+describes+the+data+in+the+data+reservoir.+Descriptive+data+provides+the+definitions+used+to+create+information+views+and+access+the+data+in+the+data+reservoir+using+the+information+view.+http%3A%2F%2Fwww.redbooks.ibm.com%2Fredpapers%2Fpdfs%2Fredp5120.pdf")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-63f60543be984bd3ab3bb2a01628d695", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-63f60543be984bd3ab3bb2a01628d695", type:"ApplicationCollaboration", name:decodeURL("Monitor"), documentation:decodeURL("The+monitor+watches+over+the+overall+function+and+responsiveness+of+the+data+reservoir+to+ensure+a+consistent+working+environment.+The+data+reservoir+has+many+monitor+components+deployed+that+record+the+activity+in+the+data+reservoir+along+with+its+availability%2C+functionality%2C+and+performance.+The+management+of+any+alerts+that+the+monitors+raise+can+be+resolved+using+workflow.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-71306c51b1cb448ea9585f38c9481543", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-71306c51b1cb448ea9585f38c9481543", type:"ApplicationCollaboration", name:decodeURL("Event+Correlation"), documentation:decodeURL("Event+correlation+provides+for+complex+event+processing+based+on+business+events+that+can+occur+over+an+extended+period+and+can+correlate+these+events+to+develop+additional+insight.+Some+of+these+events+can+come+from+insight+obtained+by+the+streaming+analytics+component.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-76d810c13e65408f9b56a002b22c2cd6", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-76d810c13e65408f9b56a002b22c2cd6", type:"ApplicationCollaboration", name:decodeURL("Data+Ingestion"), documentation:decodeURL("As+new+data+is+imported+into+the+data+reservoir%2C+the+data+ingestion+processes+ensure+the+data+is+transformed%2C+logged%2C+and+copied+into+the+appropriate+data+repositories.%0D%0AThe+ability+to+easily+import+data+from+a+multitude+of+sources+is+one+of+the+selling+points+of+the+data+reservoir.+You+want+to+be+able+to+capture+anything+easily%2C+and+to+allow+decisions+about+how+that+data+can+be+used+later+in+the+process.+That+being+said%2C+information+needs+to+be+incorporated+into+the+reservoir+in+a+controlled+manner.+During+the+process%2C+metadata+must+be+captured.+It+is+also+important+to+ensure+appropriate+separation+between+other+systems+and+the+reservoir+to+ensure+an+issue+in+one+does+not+impact+both.+The+Information+Ingestion+component+is+responsible+for+managing+this.+A+staging+area+will+often+be+used+as+part+of+the+process+to+support+loose+coupling+and+ensure+that+delays+in+processing+will+not+affect+the+source+system.%0D%0AThe+information+ingestion+component+will+apply+appropriate+policies+to+the+incoming+data%2C+including+masking%2C+quality+validation%2C+deduplication%2C+and+will+push+appropriate+metadata+to+the+reservoir+catalog.%0D%0AData+with+a+known+structure+can+be+stored+in+a+more+structured+repository+such+as+a+relational+database%2C+whereas+less+structured+or+mixed+data+can+end+up+in+a+file+system+such+as+HDFS.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-771452a2ae4346c7a5edfdc1ff5589ea", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-771452a2ae4346c7a5edfdc1ff5589ea", type:"ApplicationCollaboration", name:decodeURL("Publishing+Feeds"), documentation:decodeURL("Publishing+feeds+are+responsible+for+distributing+data+from+within+the+data+reservoir+to+other+systems+external+to+the+reservoir.+This+can+include+other+analytical+systems%2C+other+data++reservoirs%2C+and+systems+of+record%2C+but+all+are+outside+the+governance+control+of+the+supplying+data+reservoir.+Lineage+for+the+publishing+process+is+captured%2C+but+this+might+be+the+furthest+point+lineage+reports+are+available+to.+Publishing+feeds+are+responsible+for+distributing+data+from+within+the+data+reservoir+to+other+systems+external+to+the+reservoir.+This+can+include+other+analytical+systems%2C+other+data+reservoirs%2C+and+systems+of+record%2C+but+all+are+outside+the+governance+control+of+the+supplying+data+reservoir.+Lineage+for+the+publishing+process+is+captured%2C+but+this+might+be+the+furthest+point+lineage+reports+are+available+to.+This+data+can+be+triggered+by+upstream+changes%2C+or+run+on+a+schedule+or+on+demand+from+a+user+request.+A+subscription+table+is+used+to+manage+the+list+of+sources+and+the+destinations+they+need+to+be+published+to.+The+destinations+can+involve+populating+a+table%2C+creating+files%2C+or+messages+to+be+posted+to+a+queue.+During+the+publishing+process%2C+data+transformation+can+occur%2C+for+example+by+resolving+code+values+to+alternate+representations.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-7a17f2d46980482eb83b7c8c1f3ab948", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-7a17f2d46980482eb83b7c8c1f3ab948", type:"ApplicationCollaboration", name:decodeURL("Analytical+Insight+Applications"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-7f1b143e86db42b3a2e9b60b2445b2a1", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-7f1b143e86db42b3a2e9b60b2445b2a1", type:"ApplicationCollaboration", name:decodeURL("Harvested+data"), documentation:decodeURL("Harvested+data+includes+data+from+other+systems+that+has+been+extracted+and+is+being+transformed%2C+consolidated%2C+aggregated%2C+and+analyzed+to+create+new+insight")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-849be1fed3cb47b591892cf677c9de43", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-849be1fed3cb47b591892cf677c9de43", type:"ApplicationCollaboration", name:decodeURL("Workflow"), documentation:decodeURL("Workflow+consists+of+a+server+running+stewardship+processes+that+coordinate+the+work+of+the+individuals+responsible+for+fixing+any+problems+with+the+data+in+the+data+reservoir.+Successful+use+of+a+data+reservoir+depends+on+various+processes+involving+systems%2C+users%2C+and+administrators.+For+example%2C+provisioning+new+data+into+the+data+reservoir+might+involve+an+information+curator+defining+the+catalog+entry+to+describe+and+classify+the+data.+An+information+owner+must+approve+the+classifications%2C+and+an+integration+developer+must+create+the+data+ingestion+process.+Workflow+coordinates+the+work+of+these+people.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-85b90e03bb614567a1a94e349acc417a", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-85b90e03bb614567a1a94e349acc417a", type:"ApplicationCollaboration", name:decodeURL("Reporting+Data+Marts"), documentation:decodeURL("The+reporting+data+marts+provide+departmental%2Fsubject-oriented+data+marts+targeted+at+supporting+frequent+line+of+business+reports.+The+data+is+often+structured+as+a+dimensional+model+such+as+star+or+snowflake%2C+and+are+easily+used+by+common+business+reporting+packages.+Data+in+marts+will+be+updated+incrementally+as+new+data+is+made+available.+typically+from+an+information")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-8be6c2bfebeb4c77b8a3fde29fb5f5b7", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-8be6c2bfebeb4c77b8a3fde29fb5f5b7", type:"ApplicationCollaboration", name:decodeURL("Simple%2C+Ad+Hoc+Discovery+and+Analysis"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-b347f41b150e43799f57b53e5e534807", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-b347f41b150e43799f57b53e5e534807", type:"ApplicationCollaboration", name:decodeURL("Analytic+Tools"), documentation:decodeURL("Data+scientists+usually+have+a+solid+foundation+in+computer+science%2C+mathematics%2C+and+statistics%2C+rather+than+substantial+business+knowledge.+Their+role+is+to+explore+different+kinds+of+data+to+look+at+patterns+so+that+they+can+understand+the+meaning+of+relationships+between+sets+of+data.+They+often+have+a+thirst+for+new+information+sources+to+develop+new+ideas+on+how+to+gain+value+from+combining+that+data+with+other+sources.+The+tools+used+by+the+data+scientists+include+capabilities+for+preparing+and+transforming+data+for+analysis.+They+typically+work+with+data+in+its+original+%28raw%29+format.+Data+can+be+accessed+through+the+creation+of+a+sandbox+copy+of+the+data+for+the+data+scientist+to+use+because+the+data+scientist+will+subset+and+transform+the+data+as+part+of+their+work.+Their+activity+should+not+affect+the+shared+version+of+the+data+in+the+data+reservoir.+The+sandbox+will+be+accessible+as+an+area+in+a+file+system+such+as+Hadoop+Distributed+File+System+%28HDFS%29+or+accessible+by+using+common+mechanisms+such+as+Java+Database+Connectivity+%28JDBC%29+or+Open+Database+Connectivity+%28ODBC%29.+As+the+data+scientists+explore+samples+of+this+data%2C+they+will+develop+analytical+models+and+try+them+out+against+test+data.+Those+models+can+then+be+deployed+to+refinery+services+within+the+data+reservoir+or+to+operational+systems+outside+the+data+reservoir.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-bc9e625dc8c4446584ecc6cb922b7a74", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-bc9e625dc8c4446584ecc6cb922b7a74", type:"ApplicationCollaboration", name:decodeURL("Streaming+Analytics"), documentation:decodeURL("Streaming+analytics+is+the+component+responsible+for+running+the+analytics+on+streaming+data+in+real-time.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-c2627dc9a87f45708a53f42c76ec7f0e", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-c2627dc9a87f45708a53f42c76ec7f0e", type:"ApplicationCollaboration", name:decodeURL("Guards"), documentation:decodeURL("Guards+are+controls+within+the+reservoir+to+enforce+restrictions+on+access+to+data+and+related+protection+mechanisms.+These+guards+can+include+ensuring+the+requesting+user+is+authorized%2C+data+masking+being+applied%2C+or+certain+rows+of+data+being+filtered+out.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-c646544501de4e1eb9da0b907d457ffa", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-c646544501de4e1eb9da0b907d457ffa", type:"ApplicationCollaboration", name:decodeURL("Harvested+data"), documentation:decodeURL("Harvested+data+includes+data+from+other+systems+that+has+been+extracted+and+is+being+transformed%2C+consolidated%2C+aggregated%2C+and+analyzed+to+create+new+insight")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-c9b02a6a8f844ab887402ca28b6687d7", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-c9b02a6a8f844ab887402ca28b6687d7", type:"ApplicationCollaboration", name:decodeURL("Real+Time+Interfaces"), documentation:decodeURL("These+systems+could+also+make+API+calls+to+the+data+reservoir+to+access%2Fupdate+data+or+insight.+These+APIs+might+interact+with+a+single+data+repository+or+may+federate+data+from+multiple+repositories.+Service+interfaces+provide+the+ability+for+outside+systems+to+access+data+in+the+reservoir+repositories%2C+and+for+systems+within+the+reservoir+to+query+data+from+both+inside+and+outside.+These+interfaces+can+be+REST+web+services%2C+SQL+style+through+JDBC%2C+or+various+other+forms")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-eaf09e997ebe4bc1935ccd124d006ab0", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-eaf09e997ebe4bc1935ccd124d006ab0", type:"ApplicationCollaboration", name:decodeURL("Landing+Zone"), documentation:decodeURL("Landing+pad+areas+are+used+to+manage+movement+of+data+into%2C+out+of%2C+and+around+the+Logical+Data+Warehouse%2C+and+to+provide+appropriate+decoupling+between+systems.++The+implementation+can+include+database+tables%2C+directories+within+Hadoop%2C+message+queues%2C+or+similar+structures")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-f08ced68041b4470b991f5c930b95062", contenttype:"ApplicationCollaboration"});
+										dataElements.push({id:"id-f08ced68041b4470b991f5c930b95062", type:"ApplicationCollaboration", name:decodeURL("Descriptive+Data+Catalog"), documentation:decodeURL("The+catalog+is+a+repository+and+a+set+of+applications+used+to+maintain+details+about+the+data+in+the+data+reservoir.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-a64dd067c2e74aaf86a18389a1642b6b", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-a64dd067c2e74aaf86a18389a1642b6b", type:"ApplicationComponent", name:decodeURL("Descriptive+Data+Component"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-cf03d2c7b4064a8292ea664b7baff5a4", contenttype:"ApplicationComponent"});
+										dataElements.push({id:"id-cf03d2c7b4064a8292ea664b7baff5a4", type:"ApplicationComponent", name:decodeURL("Operational+Governance+Component"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-438462ab2b36472d8974b7da9daabdbf", contenttype:"ApplicationFunction"});
+										dataElements.push({id:"id-438462ab2b36472d8974b7da9daabdbf", type:"ApplicationFunction", name:decodeURL("View+Based+Interaction"), documentation:decodeURL("View-based+interaction+provides+access+to+data+in+the+data+reservoir+%28subject+to+security+permissions%29+for+line-of-business+teams+that+want+to+perform+ad+hoc+queries%2C+search%2C+simple+analytics%2C+and+data+exploration.+The+structure+of+this+information+has+been+simplified+and+it+is+labeled+using+business+relevant+terminology.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-4b119e1c1e20442199fe40cfeac5a4d5", contenttype:"ApplicationFunction"});
+										dataElements.push({id:"id-4b119e1c1e20442199fe40cfeac5a4d5", type:"ApplicationFunction", name:decodeURL("Catalog+Interfaces"), documentation:decodeURL("The+catalog+interfaces+provide+information+about+the+data+in+the+data+reservoir.+The+catalog+includes+details+of+the+information+collections+%28both+repositories+and+views%29%2C+the+meaning+and+types+of+information+stored%2C+and+the+profile+of+the+information+values+within+each+information+collection.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-d248e59d81ab4e1f8a3fdcb7f647195c", contenttype:"ApplicationFunction"});
+										dataElements.push({id:"id-d248e59d81ab4e1f8a3fdcb7f647195c", type:"ApplicationFunction", name:decodeURL("Information+Integration+and+Governance"), documentation:decodeURL("Information+integration+and+governance+provide+the+libraries+to+support+different+provisioning%2C+transformation%2C+and+governance+capabilities+that+are+used+in+the+data+reservoir%2C+particularly+the+data+refineries.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-d3087d7bb7534a5aaedcc69227879d18", contenttype:"ApplicationFunction"});
+										dataElements.push({id:"id-d3087d7bb7534a5aaedcc69227879d18", type:"ApplicationFunction", name:decodeURL("Raw+data+interaction"), documentation:decodeURL("Raw+data+interaction+provides+access+to+most+of+the+data+%28security+permitting%29+in+the+data+reservoir+for+advanced+analytics.+It+is+responsible+for+masking+sensitive+personal+information+where+appropriate.")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-407ba8683927455590d608a37511ecec", contenttype:"ApplicationInterface"});
+										dataElements.push({id:"id-407ba8683927455590d608a37511ecec", type:"ApplicationInterface", name:decodeURL("User+Interface"), documentation:decodeURL("ApplicationInterface%3AArchiMate")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-497ffea81acb40ca87a139714d1e1203", contenttype:"ApplicationInterface"});
+										dataElements.push({id:"id-497ffea81acb40ca87a139714d1e1203", type:"ApplicationInterface", name:decodeURL("API"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-af171c0aeb7d41d09288aa3b824758ba", contentid:"id-3c6772ccae054092b61b61a962ec5fd2", contenttype:"DataObject"});
+										dataElements.push({id:"id-3c6772ccae054092b61b61a962ec5fd2", type:"DataObject", name:decodeURL("Information+Views"), documentation:decodeURL("Definitions+of+simplified+subsets+of+information+stored+in+the+data+reservoir+repositories.+These+views+are+created+with+the+information+consumer+in+mind.")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-05e8872f17554a2686ef566997434121", contenttype:"Folder"});
+								dataFolders.push({id:"id-05e8872f17554a2686ef566997434121", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-0028ebfdbf814de89fd356326015d622", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-0028ebfdbf814de89fd356326015d622", type:"TechnologyCollaboration", name:decodeURL("IIG+Code+Hub"), documentation:decodeURL("The+code+hub+is+a+repository+of+common+code+tables+and+mappings+used+for+joining+information+sources+to+create+information+views")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-1c397457f1df4568a87f8735c222a402", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-1c397457f1df4568a87f8735c222a402", type:"TechnologyCollaboration", name:decodeURL("Asset+hub"), documentation:decodeURL("A+repository+for+slowly+changing+operational+master+data+%28information+assets%29+such+as%2C+customer+profiles%2C+product+definitions%2C+and+contracts.+This+repository+provides+authoritative+operational+master+data+for+the+real-time+interfaces%2C+real-time+analytics+and+for+data+validation+in+data+ingestion.+If+it+is+a+reference+repository+of+the+operational+master+data+management+%28MDM%29+systems+it+might+also+be+extended+with+new+attributes+that+are+maintained+by+the+reservoir.+When+this+hub+is+taking+data+from+more+than+one+operational+system%2C+there+may+also+be+additional+quality+and+de-duplication+processes+running+that+improve+the+data.+These+changes+are+published+from+the+asset+hub+for+distribution+both+inside+and+outside+the+reservoir.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-2682fdaba6524213b3af0010d0a3caaf", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-2682fdaba6524213b3af0010d0a3caaf", type:"TechnologyCollaboration", name:decodeURL("Audit+Data+Repository"), documentation:decodeURL("A+repository+used+to+keep+a+record+of+the+activity+in+the+data+reservoir.+It+is+used+for+auditing+the+use+of+data+and+who+is+accessing+it%2C+when%2C+and+for+what+purpose")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-2f9df07fa2114f8dabc5fb20922ae4af", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-2f9df07fa2114f8dabc5fb20922ae4af", type:"TechnologyCollaboration", name:decodeURL("Code+Hub"), documentation:decodeURL("A+repository+of+common+code+tables+and+mappings+that+are+available+through+the+data+reservoir%27s+application+programming+interfaces+%28APIs%29.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-2ff9d642d760482a8b1d2bebf54b756c", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-2ff9d642d760482a8b1d2bebf54b756c", type:"TechnologyCollaboration", name:decodeURL("Advanced+Analytics+Sandboxes"), documentation:decodeURL("A+sandbox+is+used+to+provide+a+user+with+a+copy+of+data+from+selected+repositories+that+allows+for+a+greater+level+of+isolation+from+changes+to+the+underlying+data+and+to+limit+the+workload+impact+on+the+rest+of+the+reservoir")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-4249bf6859074b998558e5d39b744c31", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-4249bf6859074b998558e5d39b744c31", type:"TechnologyCollaboration", name:decodeURL("Information+Warehouse+Repository"), documentation:decodeURL("repository+optimized+for+high-speed+analytics.+This+data+is+structured+and+contains+a+correlated+and+consolidated+collection+of+information.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-48edc4c331e74fcdafff886918ac03f8", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-48edc4c331e74fcdafff886918ac03f8", type:"TechnologyCollaboration", name:decodeURL("Activity+hub"), documentation:decodeURL("A+repository+for+storing+recent+activity+related+to+a+master+entity.+This+repository+is+needed+to+support+the+real-time+interfaces+and+real-time+analytics.+It+may+be+loaded+through+the+data+ingestion+process+and+through+the+real-time+interfaces.+However%2C+many+of+its+values+were+derived+from+analytics+running+inside+the+data+reservoir.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-672e29f9f6504032a333c45f50fede02", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-672e29f9f6504032a333c45f50fede02", type:"TechnologyCollaboration", name:decodeURL("Deep+Data+Repository"), documentation:decodeURL("A+repository+holding+a+copy+of+most+of+the+data+in+the+data+reservoir.+It+provides+a+place+where+raw+data+can+be+located+for+analysis.+The+data+may+be+annotated%2C+linked%2C+and+consolidated+in+deep+data.+Data+may+be+mapped+to+data+structures+after+it+is+stored%2C+so+effort+is+spend+as+needed+rather+than+at+the+time+of+storing.+This+repository+is+designed+for+flexibility%2C+supporting+both+high+volumes+and+variety+of+data")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-71f8a65dd7eb4acdbdf3c8525b8f7823", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-71f8a65dd7eb4acdbdf3c8525b8f7823", type:"TechnologyCollaboration", name:decodeURL("VBI+SandBoxes"), documentation:decodeURL("A+sandbox+is+an+area+of+personal+storage+where+a+copy+of+requested+data+is+placed+for+the+requester+to+use.+These+sandboxes+are+the+same+as+the+sandboxes+in+raw+data+interaction.+They+are+populated+from+the+simplified+information+collections+designed+for+business+users.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-9783414e57c046ddb91fde71f93cdfb5", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-9783414e57c046ddb91fde71f93cdfb5", type:"TechnologyCollaboration", name:decodeURL("Descriptive+Data+Repository"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-a16f351bdc044c618e285b91d8610965", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-a16f351bdc044c618e285b91d8610965", type:"TechnologyCollaboration", name:decodeURL("Operational+Governance+Repository"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-ad34c5b8f52c4812bd64eea04ee5c00b", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-ad34c5b8f52c4812bd64eea04ee5c00b", type:"TechnologyCollaboration", name:decodeURL("Information+Access+and+Feedback"), documentation:decodeURL("Self-service+provisioning+helps+to+get+information+to+business+users+with+minimal+delay%2C+known+characteristics%2C+and+without+any+additional+IT+involvement.+To+support+this+and+improve+the+usefulness+of+the+reservoir%2C+users+are+able+to+request+access+to+additional+data+and+feedback+on+the+data+within+the+reservoir+through+comments%2C+tagging%2C+rating%2C+and+other+collaboration.+This+can+be+done+through+interfaces+such+as+the+catalog+as+they+search+for+data%2C+or+through+other+collaboration+tools+and+social+media.+Information+views+provide+simplified+subsets+of+the+data+reservoir+repositories+that+are+labeled+with+business+friendly+terms.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-c11181d0cd8f477b9fddbdcf4b45ea59", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-c11181d0cd8f477b9fddbdcf4b45ea59", type:"TechnologyCollaboration", name:decodeURL("Object+Cahce"), documentation:decodeURL("To+improve+performance+and+availability+to+applications%2C+some+views+of+data+can+be+made+available+through+a+cache.+The+object+cache+is+particularly+suited+for+systems+of+engagement+applications+because+it+is+document-oriented%2C+typically+using+the+JSON+format.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-d9ba77b1b7194293ab4e6389458b7e95", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-d9ba77b1b7194293ab4e6389458b7e95", type:"TechnologyCollaboration", name:decodeURL("Operational+History+Repository"), documentation:decodeURL("A+repository+providing+a+historical+record+of+the+data+from+an+operational+application.+This+data+is+stored+in+the+same+format+and+with+the+same+level++of+quality+as+is+found+in+the+application+itself.+This+approach+makes+it+possible+to+use+this+data+to+investigate+activity+around+a+specific+application.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-f33fd649120c44a7a03d8ec918d873bf", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-f33fd649120c44a7a03d8ec918d873bf", type:"TechnologyCollaboration", name:decodeURL("Content+hub"), documentation:decodeURL("A+repository+of+documents%2C+media+files%2C+and+other+content+that+has+been+managed+under+a+content+management+repository+and+is+classified+with+relevant+metadata+to+understand+its+content+and+status.")});
+									dataFoldersContent.push({folderid:"id-05e8872f17554a2686ef566997434121", contentid:"id-f4409195a2a045f0b6a28b8ef86fafeb", contenttype:"TechnologyCollaboration"});
+										dataElements.push({id:"id-f4409195a2a045f0b6a28b8ef86fafeb", type:"TechnologyCollaboration", name:decodeURL("Staging+Areas"), documentation:decodeURL("A+server+supporting+the+staging+areas+that+are+used+to+move+information+around+the+data+reservoir.")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-4533d139c46c472cb8e1181be8e86297", contenttype:"Folder"});
+								dataFolders.push({id:"id-4533d139c46c472cb8e1181be8e86297", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-fd2a2c0f22f84718a47f5d8e876d8d9d", contenttype:"Folder"});
+								dataFolders.push({id:"id-fd2a2c0f22f84718a47f5d8e876d8d9d", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-91d3c71b3f2a454cbeaa4f521e6313ed", contenttype:"Folder"});
+								dataFolders.push({id:"id-91d3c71b3f2a454cbeaa4f521e6313ed", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-91d3c71b3f2a454cbeaa4f521e6313ed", contentid:"id-f2d7b5ab36a94e5d86a657656c04a145", contenttype:"Grouping"});
+										dataElements.push({id:"id-f2d7b5ab36a94e5d86a657656c04a145", type:"Grouping", name:decodeURL("Sources"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-13489efb3c8e45cbb7111d8ee85862eb", contenttype:"Folder"});
+								dataFolders.push({id:"id-13489efb3c8e45cbb7111d8ee85862eb", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-d8a4cb9703e343d18f8225d59551e580", contentid:"id-4227833de7244da093211a29e3acd7ff", contenttype:"Folder"});
+								dataFolders.push({id:"id-4227833de7244da093211a29e3acd7ff", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-4227833de7244da093211a29e3acd7ff", contentid:"id-67d0840dbe3e4ce8a1f0e6400377bee6", contenttype:"Folder"});
+									dataFolders.push({id:"id-67d0840dbe3e4ce8a1f0e6400377bee6", type:"Folder", name:decodeURL("BI%2FA+Platform"), documentation:decodeURL("")});
+										dataFoldersContent.push({folderid:"id-67d0840dbe3e4ce8a1f0e6400377bee6", contentid:"id-f09a77be5ff448b098b2bb03d7a08728", contenttype:"ArchimateDiagramModel"});
+											dataViews.push({id:"id-f09a77be5ff448b098b2bb03d7a08728", type:"ArchimateDiagramModel", name:decodeURL("BI%2FA+Layered"), documentation:decodeURL("")});
+													dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-f2d7b5ab36a94e5d86a657656c04a145", contenttype:"Grouping"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-fbcdde5ce589463b9ba0cd6531a1f87a", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-0d20e2c58efb444c94ca98f410d61e97", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-bd96dee13c5e485091aedd533ea13fcb", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-47beff04cb85411d814ef1168d0e875d", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b2ceae3c369547a590a273dfdbdd6bbd", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-fe78d1b42fc1463a807f764dc77bab80", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-f8d84883f77f4b049d24b79ac8e21fce", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5f1da42882ba4d80a5bf62f6e11ba948", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-6db77ed37b74413ab056afe7d62d8b07", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-9a031e070fa24563bf05908b879eb448", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-175643eea1ea4783922c13891a1bdfed", contenttype:"BusinessObject"});
+													
+													dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-d347b54712ca43e1abaef107382c1d9b", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-20ff6dc5b5f04c27a7de44a865fbb93b", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-1d20f4ce7baf4ee6ac8eeb212c46a300", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-1833dc2e49f44f4b9dbf01f0a3e67968", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-1f588769bc664dccb27626183dd41c5d", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-76d810c13e65408f9b56a002b22c2cd6", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-3f1c5b3eb80a48b5b73467621d2118cd", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-0028ebfdbf814de89fd356326015d622", contenttype:"TechnologyCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-f4409195a2a045f0b6a28b8ef86fafeb", contenttype:"TechnologyCollaboration"});
+													
+													dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-54699335b2b045058bd554f7f5c0b08a", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-20ab97c061544d968b8b450b5df8e679", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-50e28170c23a444fac916e237faa96ad", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-d3b91e75bc1f4d7c907dd544e84bd4f2", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-9f9862ea3986429da31ce89667c764a9", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5c3f6b4c370c47ffa3e98b3be1f33106", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-c646544501de4e1eb9da0b907d457ffa", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-4249bf6859074b998558e5d39b744c31", contenttype:"TechnologyCollaboration"});
+																	
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-85b90e03bb614567a1a94e349acc417a", contenttype:"ApplicationCollaboration"});
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-dffc64f165f34f7f96a7d944f09233a7", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-eaf09e997ebe4bc1935ccd124d006ab0", contenttype:"ApplicationCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-1ee5c55ac4894f39a810420c570753c2", contenttype:"ApplicationCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-3dc07a65865d444abf75c5b320c0ee93", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-d9ba77b1b7194293ab4e6389458b7e95", contenttype:"TechnologyCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-2682fdaba6524213b3af0010d0a3caaf", contenttype:"TechnologyCollaboration"});
+																	
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-7f1b143e86db42b3a2e9b60b2445b2a1", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-672e29f9f6504032a333c45f50fede02", contenttype:"TechnologyCollaboration"});
+																	
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-50db94ec51d14bc981b177e19d9b836e", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b8c5edf5be77418fb8e65d5d777ec0de", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-99b99fa558bf432cb1359b371d5dacdc", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-9567aeb84b954a71939e1c73cdc69449", contenttype:"BusinessFunction"});
+															
+													
+													dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-bd829b0300e7444aabe4232f9d5fc7a3", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5d9fec6eab7d43b6b394afe35c5f4832", contenttype:"Product"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-ce469e9ff7444074b5c07f84822aee29", contenttype:"Product"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b10ddaad15624f44b6d89b21e5a2bffd", contenttype:"Product"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-a3ceb031201c4c7097cb1a40cd273d74", contenttype:"Product"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-10ecee42e63b47f495b011479447fcc9", contenttype:"BusinessInterface"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-04b774cfb28f4bc4b381d2d180857eb0", contenttype:"BusinessObject"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-fda6408b93fb4a598c3f29ed6abadce8", contenttype:"BusinessInterface"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-2d3a562b1d21442fb2c62dd5ca03d151", contenttype:"BusinessService"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-007f8c34fdc64a988950ac7217f74caa", contenttype:"BusinessService"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-8f85684624cd48908e25146574a73662", contenttype:"BusinessInterface"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-290f4605457e477bb1c003c033ceecb4", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-8be6c2bfebeb4c77b8a3fde29fb5f5b7", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-301fc63c0472488db140c21e5f34a230", contenttype:"ApplicationCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-bc9e625dc8c4446584ecc6cb922b7a74", contenttype:"ApplicationCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-71306c51b1cb448ea9585f38c9481543", contenttype:"ApplicationCollaboration"});
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-c9b02a6a8f844ab887402ca28b6687d7", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-771452a2ae4346c7a5edfdc1ff5589ea", contenttype:"ApplicationCollaboration"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-438462ab2b36472d8974b7da9daabdbf", contenttype:"ApplicationFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-c11181d0cd8f477b9fddbdcf4b45ea59", contenttype:"TechnologyCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-71f8a65dd7eb4acdbdf3c8525b8f7823", contenttype:"TechnologyCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-ad34c5b8f52c4812bd64eea04ee5c00b", contenttype:"TechnologyCollaboration"});
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-2b956c103b1b4f8690fd98442e0b891d", contenttype:"BusinessService"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-3139615f11b548d48e2847d589f8da94", contenttype:"BusinessRole"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b347f41b150e43799f57b53e5e534807", contenttype:"ApplicationCollaboration"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-d3087d7bb7534a5aaedcc69227879d18", contenttype:"ApplicationFunction"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-2ff9d642d760482a8b1d2bebf54b756c", contenttype:"TechnologyCollaboration"});
+																	
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-7a17f2d46980482eb83b7c8c1f3ab948", contenttype:"ApplicationCollaboration"});
+															
+													
+													dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b1af39e0825d45b091d44cc0c33df5e8", contenttype:"BusinessFunction"});
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-20d3b83a1fcb4b0d93ecbd16f0878bbd", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-6b59dce2ad294e21a5fa5a7ce65c2191", contenttype:"BusinessRole"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5387005416854163a3c51fbb8d6a4fe9", contenttype:"BusinessRole"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-7b149f55af894b45940aece4262935de", contenttype:"BusinessRole"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-39726a1cd25f4c4caea284160f59ebaa", contenttype:"BusinessRole"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-149f60fd12314914ae5b160461482a64", contenttype:"BusinessRole"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-17a0622f57454d00abc37d44cb763609", contenttype:"BusinessRole"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-51f6bed62667440b9f90999cabad80cb", contenttype:"BusinessRole"});
+																	
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-d248e59d81ab4e1f8a3fdcb7f647195c", contenttype:"ApplicationFunction"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-15c8158e221b44298c1c8943f3968926", contenttype:"ApplicationCollaboration"});
+																					dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-cf03d2c7b4064a8292ea664b7baff5a4", contenttype:"ApplicationComponent"});
+																					dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-a16f351bdc044c618e285b91d8610965", contenttype:"TechnologyCollaboration"});
+																			
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-849be1fed3cb47b591892cf677c9de43", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-63f60543be984bd3ab3bb2a01628d695", contenttype:"ApplicationCollaboration"});
+																	
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-67202f37a4dd4465b31151d02c385322", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5b63a650d40f42e7b0b890e3dcaecfec", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-f33fd649120c44a7a03d8ec918d873bf", contenttype:"TechnologyCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-1c397457f1df4568a87f8735c222a402", contenttype:"TechnologyCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-48edc4c331e74fcdafff886918ac03f8", contenttype:"TechnologyCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-2f9df07fa2114f8dabc5fb20922ae4af", contenttype:"TechnologyCollaboration"});
+																	
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-6961e2d84a7a46879cfaf8f360b51486", contenttype:"BusinessFunction"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-b40c5cf8350f4cd8a379fda1c14c46c5", contenttype:"BusinessRole"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-4b119e1c1e20442199fe40cfeac5a4d5", contenttype:"ApplicationFunction"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-407ba8683927455590d608a37511ecec", contenttype:"ApplicationInterface"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-497ffea81acb40ca87a139714d1e1203", contenttype:"ApplicationInterface"});
+																	
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-630ae4cd673b43c29f900d8e66ff2f8b", contenttype:"ApplicationCollaboration"});
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-f08ced68041b4470b991f5c930b95062", contenttype:"ApplicationCollaboration"});
+																					dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-a64dd067c2e74aaf86a18389a1642b6b", contenttype:"ApplicationComponent"});
+																					dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-9783414e57c046ddb91fde71f93cdfb5", contenttype:"TechnologyCollaboration"});
+																			
+																			dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-3c6772ccae054092b61b61a962ec5fd2", contenttype:"DataObject"});
+																	
+															
+															dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-5e4fc0dd2f90455c97c567739633a490", contenttype:"BusinessEvent"});
+																	dataViewsContent.push({viewid:"id-f09a77be5ff448b098b2bb03d7a08728", contentid:"id-c2627dc9a87f45708a53f42c76ec7f0e", contenttype:"ApplicationCollaboration"});
+															
+													
+
+													
+													
+																	
+															
+																	
+																	
+															
+															
+													
+															
+															
+																	
+															
+													
+																	
+																			
+																	
+															
+																	
+															
+																	
+																			
+																	
+															
+															
+													
+
+
+
+									dataFoldersContent.push({folderid:"id-4227833de7244da093211a29e3acd7ff", contentid:"id-3dbf681ef2864c96891327df150def82", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-3dbf681ef2864c96891327df150def82", type:"ArchimateDiagramModel", name:decodeURL("Default+View"), documentation:decodeURL("")});
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

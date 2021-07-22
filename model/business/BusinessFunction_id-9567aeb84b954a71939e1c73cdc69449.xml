@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="In Memory Database"
+    id="id-9567aeb84b954a71939e1c73cdc69449"
+    documentation="Refers to in-memory database to create virtual integrated view of data on the fly. This may require physically moving data to an environment (e.g., SAP Hana) before conducting data virtualization"/>

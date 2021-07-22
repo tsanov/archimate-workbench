@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Structured Data"
+    id="id-fbcdde5ce589463b9ba0cd6531a1f87a"
+    documentation="Data that can be both searched and processed by machine.&#xD;&#xA;&#xD;&#xA;Structured data typically resides in databases, including spreadsheets, and is used for both transaction and analytical processing. The latter normally conforms to an enterprise-wide semantics and syntax that transcends specific business processes and functions and includes the representation of Knowledge (e.g., decision trees and rule bases). This data model or structure is defined prior to the ingestion of associated data."/>

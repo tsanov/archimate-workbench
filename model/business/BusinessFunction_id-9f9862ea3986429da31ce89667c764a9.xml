@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Dependant Data Mart"
+    id="id-9f9862ea3986429da31ce89667c764a9"
+    documentation="Dependent data marts are a subset of the data warehouse and are usually oriented to a specific business line"/>

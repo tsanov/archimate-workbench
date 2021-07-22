@@ -1,0 +1,5 @@
+<archimate:ApplicationCollaboration
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Reporting Data Marts"
+    id="id-85b90e03bb614567a1a94e349acc417a"
+    documentation="The reporting data marts provide departmental/subject-oriented data marts targeted at supporting frequent line of business reports. The data is often structured as a dimensional model such as star or snowflake, and are easily used by common business reporting packages. Data in marts will be updated incrementally as new data is made available. typically from an information"/>

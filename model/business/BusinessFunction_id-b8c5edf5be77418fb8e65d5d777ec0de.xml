@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Integration"
+    id="id-b8c5edf5be77418fb8e65d5d777ec0de"
+    documentation="Instead of physically moving the data, data federation/virtualization executes queries against multiple data sources to create virtual integrated views of data on the fly. DV/DF requires adapters to various data sources, a metadata repository and a query engine that can provide results in various ways (for example, as an SQL row set, XML or a Web services interface)"/>

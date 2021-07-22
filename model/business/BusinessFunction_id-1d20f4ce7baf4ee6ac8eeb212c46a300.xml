@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Batch / ETL"
+    id="id-1d20f4ce7baf4ee6ac8eeb212c46a300"
+    documentation="Extracting, processing, and loading data in bulk, batch data movement includes two styles: extract-load-transform (ELT) and extract-transform-load (ETL). Batch data movement often combines with data cleaning processes, such as reconciling semantic disparity, merging master data entities or correcting erroneous data"/>

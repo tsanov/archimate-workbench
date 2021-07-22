@@ -1,0 +1,5 @@
+<archimate:BusinessInterface
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Self Service"
+    id="id-fda6408b93fb4a598c3f29ed6abadce8"
+    documentation="Refers to the capability that allows business users to query data and create personalized reports in a data warehouse or data marts environment"/>

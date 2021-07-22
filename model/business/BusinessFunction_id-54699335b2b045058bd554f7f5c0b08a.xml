@@ -1,0 +1,5 @@
+<archimate:BusinessFunction
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Persist and Access"
+    id="id-54699335b2b045058bd554f7f5c0b08a"
+    documentation="Stores the persistent data, metadata, and models that provide the analytical capabilities and orchestrate the operation of the architecture&#xD;&#xA;Stores persistent and transient information, of prepared and accessible business information that are ready for use by respective use cases"/>

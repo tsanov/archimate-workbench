@@ -1,0 +1,5 @@
+<archimate:BusinessRole
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Governance, Risk and Compliance"
+    id="id-6b59dce2ad294e21a5fa5a7ce65c2191"
+    documentation="The information governance, risk, and compliance team use a reporting environment to demonstrate compliance in industry regulations and business policies. Some of these policies apply to the management of information. These policies are defined and managed in the data reservoir’s catalog."/>
