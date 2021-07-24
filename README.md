@@ -1,8 +1,8 @@
-# Nik's ArchiMate Workbench
+# ArchiMate Workbench
 
 ## In a nutshell
 
-This repo is part of distributed [collaboration platform](https://sara-sabr.github.io/ITStrategy/2021/07/09/working-in-the-open-part-2.html) and contains unclassied ArchiMate views I am personally involved with, contributed through [Archi&coArchi](https://www.archimatetool.com/plugins/). 
+This repo is part of distributed [collaboration platform](https://sara-sabr.github.io/ITStrategy/2021/07/09/working-in-the-open-part-2.html) and contains unclassied ArchiMate views contributed through [Archi&coArchi](https://www.archimatetool.com/plugins/). 
 
 The notion of Archimate Workbench is defined in [section 11.4 of Enterprise Architecture at Work](https://www.springer.com/gp/book/9783662539323). 
 
@@ -20,4 +20,6 @@ The HTML export of all the views in this repo is available at this [GitHub Pages
 
 ## Intellectual Property Rights
 
-All rights belong to their respective owners. I do not own any of this content.
+Copyright © Her Majesty the Queen in Right of Canada, as represented by the Minister of Employment and Social Development Canada, 2019-2021.
+
+All trademarks belong to their respective owners. 
