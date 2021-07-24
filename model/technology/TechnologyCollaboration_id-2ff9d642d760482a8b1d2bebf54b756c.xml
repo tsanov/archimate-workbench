@@ -1,5 +1,5 @@
 <archimate:TechnologyCollaboration
     xmlns:archimate="http://www.archimatetool.com/archimate"
-    name="Advanced Analytics Sandboxes"
+    name="Advanced Analytics Sandboxes (technology collaboration)"
     id="id-2ff9d642d760482a8b1d2bebf54b756c"
     documentation="A sandbox is used to provide a user with a copy of data from selected repositories that allows for a greater level of isolation from changes to the underlying data and to limit the workload impact on the rest of the reservoir"/>
