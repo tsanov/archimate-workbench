@@ -16,7 +16,7 @@ Currently there are [GCCode mirror](https://gccode.ssc-spc.gc.ca/tsanov/archimat
 
 Everyone can submit merge (GCCode terminology) and pull requests (GitHub terminology) to any of mirrors. The mirrors are synced regularly but should you need your contributions to be synced sooner than later please let me know.
 
-The HTML export of all the views in this repo is available at this [GitHub Static Page](https://github.com/tsanov/).
+The HTML export of all the views in this repo is available at this [GitHub Pages site](https://tsanov.github.io/archimate-workbench/public/index.html).
 
 ## Intellectual Property Rights
 
