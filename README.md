@@ -1,4 +1,4 @@
-# Nik's Personal ArchiMate Workbench
+# Nik's Personal ArchiMate Repository
 
 ## In a nutshell
 
@@ -10,6 +10,6 @@ Any questions, judgement or comments would be welcome at nikolay.tsanov@hrsdc-rh
 
 ## How it works
 
-Currently there are GCCode mirror and GitHub mirror of this repo. Everyone can submit merge (GCCode terminology) and pull requests (GitHub terminology) to any of them. The mirrors are synced regularly but should you need your contributions to be synced sooner than later please give me a shout.
+Currently there are GCCode mirror and GitHub mirror of this repo. Everyone can submit merge (GCCode terminology) and pull requests (GitHub terminology) to any of them. The mirrors are synced regularly but should you need your contributions to be synced sooner than later please let me know.
 
-The HTML export of all the views in this repo is available at this GitHub Static Page.
+The HTML export of all the views in this repo is available at this [GitHub Static Page](https://github.com/tsanov/).
